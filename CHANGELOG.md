@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+<<<<<<< HEAD
 ## [4.4.0] - 2023-07-12
 
 ### Changed
@@ -28,6 +29,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 		- the call to run() is removed (this call had a value, just in case to review)
 	- in markRealtimeDataStale(), cleanStaleRealtimeData() and updateRealtimeData():
 		- calls to run() are removed
+=======
+## [4.4.2] - 2023-07-08
+
+### Changed
+
+- Added index to stoptimes table for stop_id field 
+- Updated node.js versions for tests
+
+## [4.4.1] - 2023-07-07
+
+### Changed
+
+- Use lint-staged instead of pretty-quick
+
+### Updated
+
+- Dependency updates
+>>>>>>> d4e18a066ec81fdfa838fd16d0fa91b727fe8e9b
 
 ## [4.4.0] - 2023-06-16
 
