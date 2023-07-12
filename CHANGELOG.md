@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.4.0] - 2023-07-12
+
+### Changed
+
+- created Database class in "mysql-db.js" in "mysql-navilens/" to create a connection and adapt the queries to a mysql database.
+
+- modified in db.js:
+	- the setupDb() method
+	- in openDb() setDefaultConfig() is no longer used
+	- closeDb() not used
+
+- in import.js:
+	- in importGtfs():
+		- removed the setDefaultConfig()
+		- removed sqlitePath attribute from task
+	 in createTables():
+		- DROP TABLE not used
+		- CREATE TABLE check if it does not exist is added
+		- calls to the run() function are removed
+	- in importLines():
+		- the call to run() is removed (this call had a value, just in case to review)
+	- in markRealtimeDataStale(), cleanStaleRealtimeData() and updateRealtimeData():
+		- calls to run() are removed
+
 ## [4.4.0] - 2023-06-16
 
 ### Changed
