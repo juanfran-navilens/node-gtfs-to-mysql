@@ -67,6 +67,7 @@
     "gtfs-import": "bin/gtfs-import.js",
     "gtfsrealtime-update": "bin/gtfsrealtime-update.js"
   },
+  "typings": "@types/index.d.ts",
   "types": "@types",
   "scripts": {
     "dtslint": "dtslint @types",
